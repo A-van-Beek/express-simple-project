@@ -1,0 +1,11 @@
+bij verbinden in dBeaver:
+"ERR_NET_PACKET_TOO_LARGE” error.
+
+The default is 16MB, the maximum is 1GB.
+64M is een redelijke waarde (dit stond er)
+
+I think some would also want to know how to find the my.ini file on your PC. For windows users, I think the best way is as follows:
+
+    Win+R(shortcut for 'run'), type services.msc, Enter
+    You could find an entry like 'MySQL80', right click on it, select properties
+    You could see sth like "D:/Program Files/MySQL/MySQL Server 5.6/bin\mysqld" --defaults-file="D:\ProgramData\MySQL\MySQL Server 5.6\my.ini" MySQL56
